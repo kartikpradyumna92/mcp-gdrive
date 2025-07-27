@@ -146,3 +146,5 @@ async function startServer() {
 
 // Start server immediately
 startServer().catch(console.error);
+console.log(JSON.stringify({ type: "session_initialized" }));
+setInterval(() => {}, 1000 * 60 * 60); // 1 hour no-op to keep process alive
